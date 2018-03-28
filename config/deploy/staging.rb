@@ -49,11 +49,11 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
-server "http://35.198.213.87/",
+server "35.198.213.87",
 user: "viet.nguyen",
 roles: %w{web db app},
 ssh_options: {
-  keys: %w(/home/vietnguyenp/.ssh/id_rsa),
+  keys: %w(~/.ssh/id_rsa),
   forward_agent: false,
   auth_methods: %w(publickey password)
   # password: "please use keys"
